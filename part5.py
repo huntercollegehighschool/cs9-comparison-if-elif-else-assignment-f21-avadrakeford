@@ -21,5 +21,12 @@ Enter a month:  February
 Enter a month:  Saturday
 not a month
 '''
-
-#start writing your code below
+month = str(input("Enter a month"))
+if (month=="January" or month=="March" or month=="May" or month=="July" or month=="August" or month=="October" or month=="December"):
+  print ("31.")
+elif (month=="April" or month=="September" or month=="June" or month=="November"):
+  print ("30.")
+elif (month=="February"):
+  print ("28 or 29.")
+else : 
+  print ("not a month")
